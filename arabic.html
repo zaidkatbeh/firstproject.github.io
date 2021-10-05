@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>main page</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="jquery.min.js"></script>
+ 
+    <style>
+       body{
+        background-image: url("images/let_life_Surprise_you.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        direction: rtl;
+
+
+       }
+        .about-me{
+            background-color: rgb(191, 224, 217); 
+            border: 3px solid rgb(191, 224, 217); 
+            border-radius: 6px;
+            padding: 12px 10px 12px 20px;
+           text-transform: capitalize;
+           font-size: large;
+           width:550px;
+           margin-left: 12px;
+        }
+        .about-me img{
+           padding-left:4px;
+           padding-top: 12px;
+           border-radius: 12px;
+           height: 200px;
+        }
+        .studying{
+            background-color: rgb(191, 224, 217); 
+            border: 3px solid rgb(191, 224, 217); 
+            border-radius: 6px;
+            padding: 22px 20px 22px 20px;
+            width:550px;
+            margin-left: 12px;
+            padding: 20px;
+        }
+        .studying table{
+            width: 100%;
+            border: 1px black solid;
+            border-collapse: collapse;
+           text-align: center;
+        }
+     
+       .contact-us{
+background-color: rgb(152, 37, 37);
+       height: 80px;
+
+
+       }
+        
+
+    </style>
+</head>
+<body>
+    <h1 style="background-color: rgba(95, 93, 93,80%);text-align: center; padding:7px;height: fit-content;"> مرحبا <span id="name"> </span>  في صفحة زيد  <div class="container"style="text-align:right">
+        <a href="main.html"class="btn btn-info"style="opacity:0.9s;">english</a>
+        <a href="arabic.html"class="btn btn-primary"style="opacity:0.9s;">العربية</a>
+    </div></h1>
+    <br>
+   
+    <br><br>
+    
+     <center>
+         <div class="about-me">
+        <img src="images/my_image.jpg" alt="self-image" >
+        <p >مرحبا أنا زيد كاتبة..... أنا طالب في جامعة الخليل. <br> أنا أدرس تخصص متعدد الوسائط
+            ...في السنة الثانية<br>
+             وهاذا هو انا &#128522</p>
+    </div>
+    <br><br>
+    <div class="studying">
+      
+       <table class=" table table-bordered">
+        <tr>
+            <td><b>لغات تعلمتها</b></td>
+            <td><b>لفات اود تعلمها</b></td>
+        </tr>
+        <tr>
+            <td>html</td>
+            <td>html5</td>
+        </tr>
+        <tr>
+            <td>css</td>
+            <td>css3</td>
+        </tr>
+        <tr>
+            <td>c++</td>
+            <td>php</td>
+        </tr>
+
+       </table>
+
+
+    </div>
+    </center>
+    <br><br><br><br><br>
+    <div class="container-fluid bg-info" style="height: fit-content;">
+        <div class="row">
+            <div class="col-md-6">
+                
+                     <p style="color: black; font-size: 25px;text-align: center;">تواصل معنا</p> 
+                   
+            </div>
+            <div class="col-md-6"> 
+                <p style="color: black; font-size: 25px;text-align: center;">اشياء اخرى</p> 
+              
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6">
+            <marquee direction=right ”>
+                  <a href="https://www.facebook.com/" target="_blank" > <img src="images/facebook.png" alt=""style="height:40px;width:40px;margin:0px"></a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="https://www.instagram.com/" target="_blank" > <img src="images/Instagram-logo.png" alt=""style="height:40px;width:40px;margin:0px"></a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://web.whatsapp.com/" target="_blank" > <img src="images/whatsapp-logo.png" alt=""style="height:40px;width:40px;margin:0px"></a>
+                </marquee>
+        </div>
+        <div class="col-md-6">
+            <a href="sugiest.html">
+            <div class="btn btn-primary btn-block">
+                اقترح شيئا
+            </div>
+        </a>
+        </div>
+    </div>
+       
+    
+       </div>
+      
+  
+
+
+  
+      
+  
+       <script>
+        var x=prompt('ادخل اسمك')
+        if(x=="أمجد")
+      document.getElementById('name').innerHTML="دكتور أمجد";
+      else
+      document.getElementById('name').innerHTML=x;
+  
+  
+  
+  
+    </script>
+</body>
+</html>

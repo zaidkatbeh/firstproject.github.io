@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="jquery.min.js"></script>
+    
+    <title>suggiest</title>
+    <style>
+        .container{
+            width:70% ;
+            padding:7px;
+            border-radius: 12px;
+        }
+      
+
+
+    </style>
+</head>
+<body>
+    <h2 align="center">suggest page</h2>
+   <div class="container bg-info">
+       <form >
+      <div class="form-groub">
+          <br><br>
+          
+              <label > <h4>enter you name</h4></label>
+              <input type="text"class="form-control" placeholder="enter you name"style="width:70%;text-align:center" >
+              <br>
+              <label > <h4>how are you</h4></label>
+              <br>
+              <input type="radio"name="g1">
+              <label>my doctor</label>
+              <br>
+              <input type="radio"name="g1">
+              <label>my friend</label>
+              <br>
+              <input type="radio"name="g1">
+              <label>random gu]y</label>
+              <br><br>
+              <label for=""><h4>your advice</h4></label>
+              <br>
+             <textarea name="" id="" cols="100" rows="6" placeholder="enter you advice here"></textarea><br><br>
+             <label ><h5>enter you email</h5></label>
+             <input type="email" required placeholder="enter your email"value="email" >
+             <br>
+             I accept that I am emailed about what happened in my advice <input type="checkbox"onclick="zaid()"id="chk">
+             <br><br>
+            
+           <a href="main.html">  <div class="sub"id="my_div"></div><input type="submit"  value="send"class="btn btn-block"style=" display: none;"onclick="back()"></div></a>
+        
+             
+
+              
+
+            
+
+
+
+
+
+      </div>
+    </form>
+   </div>
+   <br><br>
+   <a href="main.html">
+   <button class="btn btn-primary">back to bage</button>
+</a>
+   <script>
+     
+       function zaid(){
+
+if(document.getElementById('chk').checked==true)
+           document.getElementById('my_div').innerHTML='<input type="submit"  value="send"class="btn btn-block btn-success">';
+    else 
+    document.getElementById('my_div').innerHTML='<input type="submit"  value="send"class="btn btn-block btn-success"style=" display: none;">';
+       }
+  function back(){
+    prompt('thank you for helpin me');
+
+
+
+
+  }
+
+
+   </script>
+</body>
+</html>
